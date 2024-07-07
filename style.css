@@ -1,0 +1,201 @@
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #84D2C5; /* base color */
+    background-image: url('https://www.transparenttextures.com/patterns/asphalt-light.png'); /* subtle texture */
+  }
+
+ .container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #E4C988; /* 2nd color */
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    
+  }
+  .logo {
+    margin-right: 10px; /* add some space between logo and h1 */
+  }
+  
+  .logo img {
+    width: 100vw; /* set logo width to 10% of the viewport width */
+    height: 50vw; /* set logo height to 5% of the viewport width */
+    max-width: 160px; /* set a maximum width to prevent the logo from getting too large */
+    max-height: 60px; /* set a maximum height to prevent the logo from getting too large */
+    border-radius: 10%; /* add some border radius to logo, using percentage value */
+    /* object-fit: cover; ensure the logo image scales proportionally */
+  }
+  h1 {
+    color: #84D2C5; /* base color */
+    margin-bottom: 20px;
+    text-shadow: -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333, 1px 1px 0 #333; /* text outline */
+  }
+
+ .form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+ .form-control {
+    width: 100%; /* make the input field take up the full width of its parent */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* ensure padding and border are included in the width calculation */
+  }
+
+ .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+ .btn-primary {
+    background-color: #C27664; /* 3rd color */
+    color: #fff;
+  }
+
+ .btn-secondary {
+    background-color: #999;
+    color: #fff;
+  }
+
+  #result {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+    background-color: #fff; /* white background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+
+  #result h2 {
+    color: #B05A7A; /* accent color */
+  }
+
+  #result p {
+    color: #666;
+  }
+
+  #result h2:before {
+    content: '\2714';
+    color: #B05A7A; /* accent color */
+    font-size: 18px;
+    margin-right: 10px;
+  }
+
+  #result p span {
+    color: #8BC34A;
+    font-weight: bold;
+  }
+
+ .recipe-classifier {
+    margin-top: 40px;
+  }
+
+ .recipe-classifier h3 {
+    margin-bottom: 10px;
+    color: #B05A7A; /* accent color */
+  }
+
+ .recipe-classifier ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+ .recipe-classifier li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+ .recipe-classifier li:last-child {
+    border-bottom: none;
+  }
+
+ .recipe-classifier li span {
+    font-weight: bold;
+    color: #8BC34A;
+  }
+
+ .recipe-classifier li p {
+    margin-bottom: 10px;
+    color: #666;
+  }
+
+  /* Add media queries for responsiveness */
+  @media (max-width: 768px) {
+   .container {
+      max-width: 90%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .container {
+       max-width: 100%;
+     }
+    .form-group {
+       margin-bottom: 10px;
+     }
+    .btn {
+       padding: 10px 15px;
+     }
+    }
+
+    .team-members {
+      margin-top: 20px; /* add some space between the result and team members sections */
+    }
+    
+    .team-members ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .team-members li {
+      margin: 20px;
+      width: calc(25% - 40px); /* adjust the width to fit 4 members per row */
+      text-align: center;
+      display: flex; /* use flexbox to align vertically */
+      flex-direction: column; /* stack elements vertically */
+      align-items: center; /* center horizontally */
+    }
+    
+    .team-members img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover; /* scale the image to fit the container while maintaining aspect ratio */
+      border-radius: 10px; /* add some border radius for a more rounded corner look */
+      margin-bottom: 10px;
+    }
+    
+    .team-members h3 {
+      margin-top: 0;
+      margin-bottom: 5px; /* add some space between the image and team name */
+      font-size: 18px; /* increase font size for better readability */
+      font-weight: bold; /* make the team name bold */
+    }
+    
+    .team-members p {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 10px; /* add some space between the team ID and the next member */
+    }
+
+    .team-members ul li p {
+      color: #333; /* replace with your base color */
+      font-size: 16px; /* adjust font size to your liking */
+      margin-bottom: 10px; /* add some margin to separate from the name */
+    }

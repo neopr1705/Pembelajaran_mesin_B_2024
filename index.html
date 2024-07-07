@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Klasifikasi Menu</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+	<div class="container">
+        <div class="logo">
+            <img src="assets_picture/logo.png" alt="Logo" width="40" height="40">
+          </div>
+		<h1>Klasifikasi Menu</h1>
+		<form action="classify.php" method="post" id="classify-form">
+			<div class="form-group">
+				<label for="terms">Masukan Bahan:</label>
+				<input type="text" id="terms" name="terms" class="form-control" />
+			</div>
+			<div class="form-group">
+				<input type="submit" value="Klasifikasikan" class="btn btn-primary" />
+				<input type="reset" value="Reset" class="btn btn-secondary" id="reset-btn" />
+			</div>
+		</form>
+		<div id="result">
+			<!-- The result will be displayed here -->
+		</div>
+		<section class="team-members">
+			<h2>Tim</h2>
+			<ul>
+				<li>
+					<img src="assets_picture/member1.jpg" alt="Member 1 Photo">
+					<h3>Fariz R A</h3>
+					<p>2210651117</p>
+				</li>
+				<li>
+					<img src="assets_picture/member2.jpeg" alt="Member 2 Photo">
+					<h3>M Maulana Akbar</h3>
+					<p>2110651084</p>
+				</li>
+				<li>
+					<img src="assets_picture/member3.jpeg" alt="Member 3 Photo">
+					<h3>Danu A M</h3>
+					<p>2110651057</p>
+				</li>
+				<li>
+					<img src="assets_picture/member 4.jpeg" alt="Member 4 Photo">
+					<h3>M Z Rohman</h3>
+					<p>2110651104</p>
+				</li>
+			</ul>
+		</section>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
